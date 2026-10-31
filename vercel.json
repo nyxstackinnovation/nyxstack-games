@@ -3,8 +3,8 @@
     { "source": "/breakpoint-zero", "destination": "/breakpoint-zero/", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/breakpoint-zero/", "destination": "https://breakpoint-zero.onrender.com/" },
-    { "source": "/breakpoint-zero/:path*", "destination": "https://breakpoint-zero.onrender.com/:path*" },
+    { "source": "/breakpoint-zero/", "destination": "https://breakpoint-zero.vercel.app/" },
+    { "source": "/breakpoint-zero/:path*", "destination": "https://breakpoint-zero.vercel.app/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
