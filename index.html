@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo1.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <link rel="preload" href="/fonts/GeistVariable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nyxStack Games - Free Browser Games, No Download</title>
+    <meta name="description" content="Play free multiplayer browser games by nyxStack Innovation. No downloads, no installs - jump straight in on desktop or mobile." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://games.nyxstack.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="nyxStack Games" />
+    <meta property="og:title" content="nyxStack Games - Free Browser Games" />
+    <meta property="og:description" content="Play free multiplayer browser games by nyxStack Innovation. No downloads, no installs." />
+    <meta property="og:url" content="https://games.nyxstack.com/" />
+    <meta property="og:image" content="https://games.nyxstack.com/games/breakpoint-zero.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Apply the saved theme before React mounts, so there is no light/dark flash -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          document.documentElement.classList.add(t);
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

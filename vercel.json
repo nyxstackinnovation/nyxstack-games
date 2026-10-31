@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/breakpoint-zero", "destination": "/breakpoint-zero/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/breakpoint-zero/", "destination": "https://breakpoint-zero.onrender.com/" },
+    { "source": "/breakpoint-zero/:path*", "destination": "https://breakpoint-zero.onrender.com/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
